@@ -23,9 +23,15 @@ public class Movement : MonoBehaviour
     [SerializeField] private LayerMask groundMask;
 
     private Rigidbody2D rb;
+
+    private ParticleSystem exhaustParticle;
+
+    private AudioSource engineSound;
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        exhaustParticle = GetComponentInChildren<ParticleSystem>();
+        engineSound = GetComponentInChildren<AudioSource>();
     }
 
     private void Update()
@@ -33,13 +39,27 @@ public class Movement : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(circleCenter.position, circleRadius, groundMask);
         if (isGrounded)
         {
+            if (Input.GetKeyDown(KeyCode.D))
+            {
+                exhaustParticle.Play();
+            }
             if (Input.GetKey(KeyCode.D))
             {
                 _isMoving = true;
+                exhaustParticle.Play();
+                if (!engineSound.isPlaying)
+                {
+                    engineSound.Play();
+                }
             }
             if (Input.GetKeyUp(KeyCode.D))
             {
                 _isMoving = false;
+                exhaustParticle.Stop(true, ParticleSystemStopBehavior.StopEmitting);
+                if (engineSound.isPlaying)
+                {
+                    engineSound.Pause();
+                }
             }
             if (Input.GetKey(KeyCode.A))
             {
@@ -52,6 +72,11 @@ public class Movement : MonoBehaviour
         }
         else
         {
+            if (engineSound.isPlaying)
+            {
+                engineSound.Pause();
+            }
+            exhaustParticle.Stop(true, ParticleSystemStopBehavior.StopEmitting);
             _isMoving = false;
             _isStoping = false;
         }

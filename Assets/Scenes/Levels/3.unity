@@ -130,6 +130,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 47325357, guid: b9a5f45e14fec244ab6f8d7f324169c3, type: 3}
+      propertyPath: lengthInSec
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 47325357, guid: b9a5f45e14fec244ab6f8d7f324169c3, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 47325357, guid: b9a5f45e14fec244ab6f8d7f324169c3, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6360234876236545861, guid: b9a5f45e14fec244ab6f8d7f324169c3, type: 3}
       propertyPath: _thrust
       value: 400
@@ -454,7 +466,7 @@ GameObject:
   - component: {fileID: 1357754653}
   - component: {fileID: 1357754652}
   - component: {fileID: 1357754655}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Dirt
   m_TagString: Ground
   m_Icon: {fileID: 0}
