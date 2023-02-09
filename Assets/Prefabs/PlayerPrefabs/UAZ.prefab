@@ -5094,7 +5094,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.45
+  m_AngularDrag: 0.25
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -5186,7 +5186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe3cc24b15d55a0468b8d26e9829e4f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _thrust: 500
+  _thrust: 450
   _break: 300
   _isMoving: 0
   _isStoping: 0

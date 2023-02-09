@@ -5216,7 +5216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _thrust: 750
-  _break: 300
+  _break: 400
   _isMoving: 0
   _isStoping: 0
   isGrounded: 0

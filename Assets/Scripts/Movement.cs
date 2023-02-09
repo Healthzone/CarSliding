@@ -39,10 +39,10 @@ public class Movement : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(circleCenter.position, circleRadius, groundMask);
         if (isGrounded)
         {
-            if (Input.GetKeyDown(KeyCode.D))
-            {
-                exhaustParticle.Play();
-            }
+            //if (Input.GetKeyDown(KeyCode.D))
+            //{
+            //    exhaustParticle.Play();
+            //}
             if (Input.GetKey(KeyCode.D))
             {
                 _isMoving = true;

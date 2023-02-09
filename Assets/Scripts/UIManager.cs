@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using YG;
 
 public class UIManager : MonoBehaviour
 {
@@ -43,5 +44,17 @@ public class UIManager : MonoBehaviour
         _soundOn.SetActive(true);
         _soundOff.SetActive(false);
         OnPlayerChangeVolume?.Invoke(0f);
+    }
+
+    public void StartGame()
+    {
+        if (YandexGame.SDKEnabled)
+        {
+            SceneManager.LoadScene(YandexGame.savesData.currentLevel);
+        }
+        else
+        {
+            SceneManager.LoadScene(1);
+        }
     }
 }

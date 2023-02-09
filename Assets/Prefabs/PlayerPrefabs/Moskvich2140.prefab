@@ -50,7 +50,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 1
   prewarm: 0
-  playOnAwake: 0
+  playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -5048,7 +5048,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _thrust: 500
-  _break: 200
+  _break: 80
   _isMoving: 0
   _isStoping: 0
   isGrounded: 0
@@ -5132,7 +5132,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 6360234876236545870}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 391b3cb392bd6574eb3c65e587939997, type: 2}
+  m_Material: {fileID: 6200000, guid: 5d53c74ed737d724cbad145950d0d6f0, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -5148,7 +5148,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 6360234876236545870}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 391b3cb392bd6574eb3c65e587939997, type: 2}
+  m_Material: {fileID: 6200000, guid: 5d53c74ed737d724cbad145950d0d6f0, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
