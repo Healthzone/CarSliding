@@ -9,8 +9,21 @@ public class InitPlayerCamera : MonoBehaviour
     [SerializeField] private CinemachineVirtualCamera camera;
     [SerializeField] private CarSelector carSelector;
 
-    private void OnEnable() => carSelector.OnPlayerSpawned += InitCamera;
-    private void OnDisable() => carSelector.OnPlayerSpawned -= InitCamera;
+    private void OnEnable()
+    {
+        carSelector.OnPlayerSpawned += InitCamera;
+        LevelEnd.OnLevelEnd += DisableCameraFollow;
+    }
+    private void OnDisable()
+    {
+        carSelector.OnPlayerSpawned -= InitCamera;
+        LevelEnd.OnLevelEnd -= DisableCameraFollow;
+    }
+
+    private void DisableCameraFollow()
+    {
+        camera.Follow = null;
+    }
 
     private void InitCamera()
     {
