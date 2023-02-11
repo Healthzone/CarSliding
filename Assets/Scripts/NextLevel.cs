@@ -7,6 +7,7 @@ using YG;
 
 public class NextLevel : MonoBehaviour
 {
+    [SerializeField] private MoneyLabel moneyLabel;
     private void OnEnable()
     {
         LevelEnd.OnLevelEnd += ProcessFinish;
@@ -19,6 +20,7 @@ public class NextLevel : MonoBehaviour
     private void ProcessFinish()
     {
         ChangeLevel();
+        YandexGame.savesData.money = moneyLabel.CoinCount;
         YandexGame.SaveProgress();
     }
 
@@ -27,6 +29,7 @@ public class NextLevel : MonoBehaviour
     private void ChangeLevel()
     {
         YandexGame.savesData.currentLevel += 1;
+        Debug.Log(YandexGame.savesData.currentLevel);
         if (YandexGame.savesData.currentLevel > YandexGame.savesData.levelCount)
             YandexGame.savesData.currentLevel = 1;
     }

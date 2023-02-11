@@ -50,7 +50,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 1
   prewarm: 0
-  playOnAwake: 0
+  playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -116,7 +116,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.7
+      scalar: 0.35
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -867,7 +867,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 50
+      scalar: 100
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -5125,7 +5125,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.5
+  m_AngularDrag: 0.7
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -5160,7 +5160,7 @@ PolygonCollider2D:
     - - {x: 1.2977444, y: -0.5114298}
       - {x: 2.1091762, y: -0.4998684}
       - {x: 2.480928, y: -0.897572}
-      - {x: 3.2781742, y: -0.8848795}
+      - {x: 3.6988647, y: -0.8692984}
       - {x: 3.1973794, y: 0.25}
       - {x: 2.553307, y: 1.276482}
       - {x: 2.283548, y: 1.4498494}
@@ -5189,7 +5189,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.30909348, y: 1.509526}
+  m_Offset: {x: -0.33157837, y: 1.509526}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -5200,7 +5200,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.9405317, y: 0.48094797}
+  m_Size: {x: 5.42338, y: 0.48094797}
   m_EdgeRadius: 0
 --- !u!114 &400580823969349895
 MonoBehaviour:

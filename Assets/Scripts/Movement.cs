@@ -39,36 +39,56 @@ public class Movement : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(circleCenter.position, circleRadius, groundMask);
         if (isGrounded)
         {
-            //if (Input.GetKeyDown(KeyCode.D))
-            //{
-            //    exhaustParticle.Play();
-            //}
+            #region DesktopMovement
             if (Input.GetKey(KeyCode.D))
             {
-                _isMoving = true;
-                exhaustParticle.Play();
-                if (!engineSound.isPlaying)
-                {
-                    engineSound.Play();
-                }
+                BeginMoveCar();
             }
             if (Input.GetKeyUp(KeyCode.D))
             {
-                _isMoving = false;
-                exhaustParticle.Stop(true, ParticleSystemStopBehavior.StopEmitting);
-                if (engineSound.isPlaying)
-                {
-                    engineSound.Pause();
-                }
+                EndMoveCar();
             }
             if (Input.GetKey(KeyCode.A))
             {
-                _isStoping = true;
+                BeginStopCar();
             }
             if (Input.GetKeyUp(KeyCode.A))
             {
-                _isStoping = false;
+                EndStopCar();
             }
+            #endregion
+
+            #region MobileMovement
+            if (Input.touchCount > 0)
+            {
+                Touch touch = Input.GetTouch(0);
+
+                if(touch.phase == TouchPhase.Stationary && Input.touchCount == 1)
+                {
+                    if(Screen.width / 2 > touch.position.x)
+                    {
+                        BeginStopCar();
+                    }
+                    
+                    if(Screen.width / 2 < touch.position.x)
+                    {
+                        BeginMoveCar();
+                    }
+                }
+                if (touch.phase == TouchPhase.Ended && Input.touchCount == 1)
+                {
+                    if (Screen.width / 2 > touch.position.x)
+                    {
+                        EndStopCar();
+                    }
+
+                    if (Screen.width / 2 < touch.position.x)
+                    {
+                        EndMoveCar();
+                    }
+                }
+            }
+            #endregion
         }
         else
         {
@@ -79,6 +99,36 @@ public class Movement : MonoBehaviour
             exhaustParticle.Stop(true, ParticleSystemStopBehavior.StopEmitting);
             _isMoving = false;
             _isStoping = false;
+        }
+    }
+
+    private void EndStopCar()
+    {
+        _isStoping = false;
+    }
+
+    private void BeginStopCar()
+    {
+        _isStoping = true;
+    }
+
+    private void EndMoveCar()
+    {
+        _isMoving = false;
+        exhaustParticle.Stop(true, ParticleSystemStopBehavior.StopEmitting);
+        if (engineSound.isPlaying)
+        {
+            engineSound.Pause();
+        }
+    }
+
+    private void BeginMoveCar()
+    {
+        _isMoving = true;
+        exhaustParticle.Play();
+        if (!engineSound.isPlaying)
+        {
+            engineSound.Play();
         }
     }
 

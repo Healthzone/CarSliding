@@ -20,8 +20,6 @@ public class CarSelection : MonoBehaviour
     [SerializeField] private int[] carPrices;
     private int currentCar;
 
-    [Header("Sound")]
-    [SerializeField] private AudioClip purchase;
     private AudioSource source;
 
     [Header("Money")]
@@ -100,8 +98,9 @@ public class CarSelection : MonoBehaviour
     {
         YandexGame.savesData.money -= carPrices[currentCar];
         YandexGame.savesData.carsUnlocked[currentCar] = true;
+        moneyLabel.text = YandexGame.savesData.money.ToString();
         YandexGame.SaveProgress();
-        source.PlayOneShot(purchase);
+        source.Play();
         UpdateUI();
     }
 }

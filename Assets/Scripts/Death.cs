@@ -7,6 +7,7 @@ public class Death : MonoBehaviour
 {
     public Action OnPlayerDead;
     public Action<float> OnDeathTimeChanged;
+    public Action OnDeathTimeReset;
     [SerializeField] private float timeToDeathDelay = 3f;
     [SerializeField] private float time;
 
@@ -42,6 +43,7 @@ public class Death : MonoBehaviour
         if (collision.tag == "Ground")
         {
             time = timeToDeathDelay;
+            OnDeathTimeReset?.Invoke();
         }
     }
 

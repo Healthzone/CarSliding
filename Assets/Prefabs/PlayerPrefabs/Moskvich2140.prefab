@@ -4957,7 +4957,6 @@ GameObject:
   - component: {fileID: 6360234876236545860}
   - component: {fileID: 6360234876236545863}
   - component: {fileID: 6360234876236545862}
-  - component: {fileID: 6755231897130789626}
   m_Layer: 0
   m_Name: Moskvich2140
   m_TagString: Player
@@ -5195,20 +5194,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeToDeathDelay: 3
   time: 0
---- !u!114 &6755231897130789626
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6360234876236545870}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 725d5950ea2c27041b558e062e6968db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _leftWheel: {fileID: 6360234876236545867}
-  _rightWheel: {fileID: 6360234876236545860}
 --- !u!1 &7973790222930365624
 GameObject:
   m_ObjectHideFlags: 0
@@ -5233,7 +5218,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7973790222930365624}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.09, z: 0}
+  m_LocalPosition: {x: -1.64, y: -1.09, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

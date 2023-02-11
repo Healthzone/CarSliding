@@ -8,8 +8,11 @@ public class Coin : MonoBehaviour
     public static Action OnCoinTaked;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        OnCoinTaked?.Invoke();
-        Destroy(gameObject);
+        if (collision.GetType().ToString().Equals("UnityEngine.PolygonCollider2D"))
+        {
+            OnCoinTaked?.Invoke();
+            Destroy(gameObject);
+        }
     }
 
 }

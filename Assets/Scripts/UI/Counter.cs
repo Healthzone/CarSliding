@@ -18,6 +18,8 @@ public class Counter : MonoBehaviour
     private void OnDisable()
     {
         carSelector.OnPlayerSpawned -= InitCounter;
+        deathScript.OnDeathTimeChanged += ChangeCounterTime;
+        deathScript.OnDeathTimeReset += DisableCounter;
     }
     private void Start()
     {
@@ -27,6 +29,13 @@ public class Counter : MonoBehaviour
     {
         deathScript = GameObject.FindGameObjectWithTag("Player").GetComponent<Death>();
         deathScript.OnDeathTimeChanged += ChangeCounterTime;
+        deathScript.OnDeathTimeReset += DisableCounter;
+    }
+
+    private void DisableCounter()
+    {
+        if (timeLabel.enabled)
+            timeLabel.enabled = false;
     }
 
     private void ChangeCounterTime(float time)

@@ -57,4 +57,10 @@ public class UIManager : MonoBehaviour
             SceneManager.LoadScene(1);
         }
     }
+
+    public void ResetSaveData()
+    {
+        YandexGame.ResetSaveProgress();
+        YandexGame.SaveProgress();
+    }
 }

@@ -10,6 +10,9 @@ public class MoneyLabel : MonoBehaviour
 {
     private TextMeshProUGUI label;
     private int coinCount;
+
+    public int CoinCount { get => coinCount; }
+
     private void OnEnable()
     {
         YandexGame.GetDataEvent += InitMoneyLabel;
@@ -23,9 +26,8 @@ public class MoneyLabel : MonoBehaviour
 
     private void ChangeCoinCount()
     {
-        coinCount++;
-        YandexGame.savesData.money = coinCount;
-        label.text= coinCount.ToString();
+        ++coinCount;
+        label.text = coinCount.ToString();
     }
 
     private void Start()
