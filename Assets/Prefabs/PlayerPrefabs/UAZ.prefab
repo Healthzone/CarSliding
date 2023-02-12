@@ -46,7 +46,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 0.025
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -5043,13 +5043,13 @@ CircleCollider2D:
   m_GameObject: {fileID: 8769670971362212078}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 5d53c74ed737d724cbad145950d0d6f0, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 2.14, y: -0.98}
+  m_Offset: {x: 2.14, y: -0.9719355}
   serializedVersion: 2
-  m_Radius: 0.60225105
+  m_Radius: 0.59418654
 --- !u!58 &8769670971362212080
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5059,7 +5059,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 8769670971362212078}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 5d53c74ed737d724cbad145950d0d6f0, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -5126,8 +5126,8 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 2.9637558, y: -0.80054873}
-      - {x: 3.1899972, y: -0.789954}
+    - - {x: 3.0824573, y: -0.25356704}
+      - {x: 3.059329, y: 0.019955903}
       - {x: 3.0749857, y: 0.36683047}
       - {x: 1.1357316, y: 0.50892365}
       - {x: 0.5643392, y: 1.5481236}
@@ -5147,7 +5147,8 @@ PolygonCollider2D:
       - {x: 1.2648442, y: -0.9587414}
       - {x: 1.7418374, y: -0.2966649}
       - {x: 2.5066447, y: -0.2720332}
-      - {x: 2.7576356, y: -0.7717958}
+      - {x: 2.8090725, y: -0.7763299}
+      - {x: 3.181493, y: -0.7953528}
 --- !u!61 &8769670971362212076
 BoxCollider2D:
   m_ObjectHideFlags: 0

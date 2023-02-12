@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
-
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(CircleCollider2D))]
 [RequireComponent(typeof(Death))]
@@ -24,6 +24,8 @@ public class Movement : MonoBehaviour
 
     private Rigidbody2D rb;
 
+    private bool isMenuScene;
+
     private ParticleSystem exhaustParticle;
 
     private AudioSource engineSound;
@@ -32,6 +34,7 @@ public class Movement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         exhaustParticle = GetComponentInChildren<ParticleSystem>();
         engineSound = GetComponentInChildren<AudioSource>();
+        isMenuScene = SceneManager.GetActiveScene().name.Equals("Menu");
     }
 
     private void Update()
@@ -39,56 +42,59 @@ public class Movement : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(circleCenter.position, circleRadius, groundMask);
         if (isGrounded)
         {
-            #region DesktopMovement
-            if (Input.GetKey(KeyCode.D))
+            if (!isMenuScene)
             {
-                BeginMoveCar();
-            }
-            if (Input.GetKeyUp(KeyCode.D))
-            {
-                EndMoveCar();
-            }
-            if (Input.GetKey(KeyCode.A))
-            {
-                BeginStopCar();
-            }
-            if (Input.GetKeyUp(KeyCode.A))
-            {
-                EndStopCar();
-            }
-            #endregion
-
-            #region MobileMovement
-            if (Input.touchCount > 0)
-            {
-                Touch touch = Input.GetTouch(0);
-
-                if(touch.phase == TouchPhase.Stationary && Input.touchCount == 1)
+                #region DesktopMovement
+                if (Input.GetKey(KeyCode.D))
                 {
-                    if(Screen.width / 2 > touch.position.x)
+                    BeginMoveCar();
+                }
+                if (Input.GetKeyUp(KeyCode.D))
+                {
+                    EndMoveCar();
+                }
+                if (Input.GetKey(KeyCode.A))
+                {
+                    BeginStopCar();
+                }
+                if (Input.GetKeyUp(KeyCode.A))
+                {
+                    EndStopCar();
+                }
+                #endregion
+
+                #region MobileMovement
+                if (Input.touchCount > 0)
+                {
+                    Touch touch = Input.GetTouch(0);
+
+                    if (touch.phase == TouchPhase.Stationary && Input.touchCount == 1)
                     {
-                        BeginStopCar();
+                        if (Screen.width / 2 > touch.position.x)
+                        {
+                            BeginStopCar();
+                        }
+
+                        if (Screen.width / 2 < touch.position.x)
+                        {
+                            BeginMoveCar();
+                        }
                     }
-                    
-                    if(Screen.width / 2 < touch.position.x)
+                    if (touch.phase == TouchPhase.Ended && Input.touchCount == 1)
                     {
-                        BeginMoveCar();
+                        if (Screen.width / 2 > touch.position.x)
+                        {
+                            EndStopCar();
+                        }
+
+                        if (Screen.width / 2 < touch.position.x)
+                        {
+                            EndMoveCar();
+                        }
                     }
                 }
-                if (touch.phase == TouchPhase.Ended && Input.touchCount == 1)
-                {
-                    if (Screen.width / 2 > touch.position.x)
-                    {
-                        EndStopCar();
-                    }
-
-                    if (Screen.width / 2 < touch.position.x)
-                    {
-                        EndMoveCar();
-                    }
-                }
+                #endregion
             }
-            #endregion
         }
         else
         {

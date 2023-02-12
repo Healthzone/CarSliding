@@ -26,12 +26,14 @@ public class CarSelector : MonoBehaviour
 
     public void InstantiateCar()
     {
-        if(spawnedCar != null)
+        if (spawnedCar != null)
         {
             Destroy(spawnedCar);
         }
-
-        spawnedCar = Instantiate(cars[YandexGame.savesData.currentCar], transform.position, Quaternion.identity);
+        if (YandexGame.savesData.carsUnlocked[YandexGame.savesData.currentCar])
+            spawnedCar = Instantiate(cars[YandexGame.savesData.currentCar], transform.position, Quaternion.identity);
+        else
+            spawnedCar = Instantiate(cars[0], transform.position, Quaternion.identity);
         spawnedCar.GetComponentInChildren<ParticleSystem>().Play();
         OnPlayerSpawned?.Invoke();
     }
