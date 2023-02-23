@@ -367,14 +367,14 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 29
     textureCompression: 0
-    compressionQuality: 50
+    compressionQuality: 100
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 0
+    overridden: 1
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -2251,94 +2251,94 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      russiancars_pack2_side_33: -7090309379508330893
-      russiancars_pack2_side_75: 3755245665388733812
-      russiancars_pack2_side_81: 250860744998758365
-      russiancars_pack2_side_12: -433548797412593321
-      russiancars_pack2_side_55: -2553760068354365755
-      russiancars_pack2_side_58: 3652953836175707887
-      russiancars_pack2_side_46: 2195899187093151884
-      russiancars_pack2_side_73: 2131116692782202192
-      russiancars_pack2_side_42: -8861703335642844471
-      russiancars_pack2_side_84: -2885269721753642504
-      russiancars_pack2_side_66: -1584036998394193434
-      russiancars_pack2_side_87: 6821366059896817125
-      russiancars_pack2_side_22: -2337582863313935954
-      russiancars_pack2_side_62: -6966839911497921221
-      russiancars_pack2_side_35: 4065908378294126331
-      russiancars_pack2_side_28: -3499252430748597282
-      russiancars_pack2_side_60: -1082824790483988190
-      russiancars_pack2_side_32: 6353989250834562173
-      russiancars_pack2_side_56: -3878524942465025376
-      russiancars_pack2_side_54: 1731988659290947202
-      russiancars_pack2_side_70: 6194815974291515023
-      russiancars_pack2_side_34: -3803144766713789614
-      russiancars_pack2_side_31: 7257798388910839472
-      russiancars_pack2_side_38: -6786900190552653106
-      russiancars_pack2_side_86: -1038696059712188250
-      russiancars_pack2_side_14: 5169884510456009953
-      russiancars_pack2_side_21: 6725727272552827844
-      russiancars_pack2_side_19: -646595260393973441
-      russiancars_pack2_side_49: -8387402377018451372
-      russiancars_pack2_side_16: 1375925299736432863
-      russiancars_pack2_side_13: 3663043136084374535
-      russiancars_pack2_side_68: 1970073926287456888
-      russiancars_pack2_side_63: 7230330224336369291
-      russiancars_pack2_side_51: 4496733760272237032
-      russiancars_pack2_side_50: -5948078421134315803
-      russiancars_pack2_side_74: -4447343058625133606
-      russiancars_pack2_side_69: 406819512453937387
-      russiancars_pack2_side_52: -5772616678375121997
-      russiancars_pack2_side_67: 4069596505599208960
-      russiancars_pack2_side_15: 6063403250337643646
-      russiancars_pack2_side_61: 818905467641475604
-      russiancars_pack2_side_10: -2508728973571016314
-      russiancars_pack2_side_37: -3134179179588943839
-      russiancars_pack2_side_25: 2635801026421850925
-      russiancars_pack2_side_65: -8566645319566894531
-      russiancars_pack2_side_78: -4597942926279139914
-      russiancars_pack2_side_9: -5007752620416897413
+      russiancars_pack2_side_0: 408153654894748160
       russiancars_pack2_side_1: 4225862231923686672
-      russiancars_pack2_side_5: -2098949068887055021
-      russiancars_pack2_side_85: -2232926989263835134
-      russiancars_pack2_side_71: 8575256386367482455
-      russiancars_pack2_side_30: -1750474637781324553
-      russiancars_pack2_side_36: 3596868267529046918
-      russiancars_pack2_side_83: 8140804714913280871
-      russiancars_pack2_side_48: 8711774887685571374
-      russiancars_pack2_side_77: -7837506509458327313
-      russiancars_pack2_side_3: 4154273462890838192
+      russiancars_pack2_side_10: -2508728973571016314
       russiancars_pack2_side_11: -214779716936301205
-      russiancars_pack2_side_40: 1149647713657549186
-      russiancars_pack2_side_43: -8017907212491645754
-      russiancars_pack2_side_59: 4226231763436080054
-      russiancars_pack2_side_76: 6665969236352050572
+      russiancars_pack2_side_12: -433548797412593321
+      russiancars_pack2_side_13: 3663043136084374535
+      russiancars_pack2_side_14: 5169884510456009953
+      russiancars_pack2_side_15: 6063403250337643646
+      russiancars_pack2_side_16: 1375925299736432863
+      russiancars_pack2_side_17: 135223674484216033
+      russiancars_pack2_side_18: 8188834950684748189
+      russiancars_pack2_side_19: -646595260393973441
+      russiancars_pack2_side_2: -446928450111338999
+      russiancars_pack2_side_20: 9173594953948394518
+      russiancars_pack2_side_21: 6725727272552827844
+      russiancars_pack2_side_22: -2337582863313935954
+      russiancars_pack2_side_23: -8069720511429858926
+      russiancars_pack2_side_24: 7153285027323406522
+      russiancars_pack2_side_25: 2635801026421850925
       russiancars_pack2_side_26: 3264378945900912661
       russiancars_pack2_side_27: 2204103460730335054
-      russiancars_pack2_side_2: -446928450111338999
-      russiancars_pack2_side_47: 3701051488802694414
-      russiancars_pack2_side_53: -1281955860270850558
-      russiancars_pack2_side_82: 357497272373039968
-      russiancars_pack2_side_45: 6044239681388854868
-      russiancars_pack2_side_64: 5927390267988554868
-      russiancars_pack2_side_80: 744767930791830773
-      russiancars_pack2_side_24: 7153285027323406522
-      russiancars_pack2_side_6: -197245774584114533
-      russiancars_pack2_side_7: 1828009545153350927
-      russiancars_pack2_side_0: 408153654894748160
-      russiancars_pack2_side_17: 135223674484216033
-      russiancars_pack2_side_20: 9173594953948394518
+      russiancars_pack2_side_28: -3499252430748597282
       russiancars_pack2_side_29: 1304468859328339149
-      russiancars_pack2_side_57: 3608143147858227627
-      russiancars_pack2_side_72: 7284139149823744142
-      russiancars_pack2_side_79: 473549930079159142
-      russiancars_pack2_side_8: -7539207817341115450
-      russiancars_pack2_side_44: 185862339394876215
-      russiancars_pack2_side_23: -8069720511429858926
-      russiancars_pack2_side_41: -997056809512087944
-      russiancars_pack2_side_18: 8188834950684748189
+      russiancars_pack2_side_3: 4154273462890838192
+      russiancars_pack2_side_30: -1750474637781324553
+      russiancars_pack2_side_31: 7257798388910839472
+      russiancars_pack2_side_32: 6353989250834562173
+      russiancars_pack2_side_33: -7090309379508330893
+      russiancars_pack2_side_34: -3803144766713789614
+      russiancars_pack2_side_35: 4065908378294126331
+      russiancars_pack2_side_36: 3596868267529046918
+      russiancars_pack2_side_37: -3134179179588943839
+      russiancars_pack2_side_38: -6786900190552653106
       russiancars_pack2_side_39: 3963583359975415698
       russiancars_pack2_side_4: -6372358624847310768
+      russiancars_pack2_side_40: 1149647713657549186
+      russiancars_pack2_side_41: -997056809512087944
+      russiancars_pack2_side_42: -8861703335642844471
+      russiancars_pack2_side_43: -8017907212491645754
+      russiancars_pack2_side_44: 185862339394876215
+      russiancars_pack2_side_45: 6044239681388854868
+      russiancars_pack2_side_46: 2195899187093151884
+      russiancars_pack2_side_47: 3701051488802694414
+      russiancars_pack2_side_48: 8711774887685571374
+      russiancars_pack2_side_49: -8387402377018451372
+      russiancars_pack2_side_5: -2098949068887055021
+      russiancars_pack2_side_50: -5948078421134315803
+      russiancars_pack2_side_51: 4496733760272237032
+      russiancars_pack2_side_52: -5772616678375121997
+      russiancars_pack2_side_53: -1281955860270850558
+      russiancars_pack2_side_54: 1731988659290947202
+      russiancars_pack2_side_55: -2553760068354365755
+      russiancars_pack2_side_56: -3878524942465025376
+      russiancars_pack2_side_57: 3608143147858227627
+      russiancars_pack2_side_58: 3652953836175707887
+      russiancars_pack2_side_59: 4226231763436080054
+      russiancars_pack2_side_6: -197245774584114533
+      russiancars_pack2_side_60: -1082824790483988190
+      russiancars_pack2_side_61: 818905467641475604
+      russiancars_pack2_side_62: -6966839911497921221
+      russiancars_pack2_side_63: 7230330224336369291
+      russiancars_pack2_side_64: 5927390267988554868
+      russiancars_pack2_side_65: -8566645319566894531
+      russiancars_pack2_side_66: -1584036998394193434
+      russiancars_pack2_side_67: 4069596505599208960
+      russiancars_pack2_side_68: 1970073926287456888
+      russiancars_pack2_side_69: 406819512453937387
+      russiancars_pack2_side_7: 1828009545153350927
+      russiancars_pack2_side_70: 6194815974291515023
+      russiancars_pack2_side_71: 8575256386367482455
+      russiancars_pack2_side_72: 7284139149823744142
+      russiancars_pack2_side_73: 2131116692782202192
+      russiancars_pack2_side_74: -4447343058625133606
+      russiancars_pack2_side_75: 3755245665388733812
+      russiancars_pack2_side_76: 6665969236352050572
+      russiancars_pack2_side_77: -7837506509458327313
+      russiancars_pack2_side_78: -4597942926279139914
+      russiancars_pack2_side_79: 473549930079159142
+      russiancars_pack2_side_8: -7539207817341115450
+      russiancars_pack2_side_80: 744767930791830773
+      russiancars_pack2_side_81: 250860744998758365
+      russiancars_pack2_side_82: 357497272373039968
+      russiancars_pack2_side_83: 8140804714913280871
+      russiancars_pack2_side_84: -2885269721753642504
+      russiancars_pack2_side_85: -2232926989263835134
+      russiancars_pack2_side_86: -1038696059712188250
+      russiancars_pack2_side_87: 6821366059896817125
+      russiancars_pack2_side_9: -5007752620416897413
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 1

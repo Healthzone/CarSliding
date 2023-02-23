@@ -43,7 +43,7 @@ public class CarSelection : MonoBehaviour
         if (YandexGame.SDKEnabled)
         {
             currentCar = YandexGame.savesData.currentCar;
-            YandexGame.savesData.carsUnlocked[0] = true;
+            YandexGame.savesData.newCarsUnlocked[0] = true;
             moneyLabel.text = YandexGame.savesData.money.ToString();
             SelectCar(currentCar);
         }
@@ -61,7 +61,7 @@ public class CarSelection : MonoBehaviour
 
     private void UpdateUI()
     {
-        if (YandexGame.savesData.carsUnlocked[currentCar])
+        if (YandexGame.savesData.newCarsUnlocked[currentCar])
         {
             chooseButton.gameObject.SetActive(true);
             buyButtton.gameObject.SetActive(false);
@@ -97,7 +97,7 @@ public class CarSelection : MonoBehaviour
     public void BuyCar()
     {
         YandexGame.savesData.money -= carPrices[currentCar];
-        YandexGame.savesData.carsUnlocked[currentCar] = true;
+        YandexGame.savesData.newCarsUnlocked[currentCar] = true;
         moneyLabel.text = YandexGame.savesData.money.ToString();
         YandexGame.SaveProgress();
         source.Play();

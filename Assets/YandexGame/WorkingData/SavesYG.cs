@@ -15,6 +15,7 @@ namespace YG
         public int currentLevel = 1;
         public int levelCount = 20;
         public bool[] carsUnlocked = new bool[6];
+        public bool[] newCarsUnlocked = new bool[12];
 
         // Ваши сохранения
 
@@ -27,6 +28,10 @@ namespace YG
         // Вы можете выполнить какие то действия при загрузке сохранений
         public SavesYG()
         {
+            for (int i = 0; i < carsUnlocked.Length; i++)
+            {
+                newCarsUnlocked[i] = carsUnlocked[i];
+            }
             // Длина массива в проекте должна быть задана один раз!
             // Если после публикации игры изменить длину массива, то после обновления игры у пользователей сохранения могут поломаться
             // Если всё же необходимо увеличить длину массива, сдвиньте данное поле массива в самую нижнюю строку кода

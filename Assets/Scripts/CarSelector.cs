@@ -30,7 +30,7 @@ public class CarSelector : MonoBehaviour
         {
             Destroy(spawnedCar);
         }
-        if (YandexGame.savesData.carsUnlocked[YandexGame.savesData.currentCar])
+        if (YandexGame.savesData.newCarsUnlocked[YandexGame.savesData.currentCar])
             spawnedCar = Instantiate(cars[YandexGame.savesData.currentCar], transform.position, Quaternion.identity);
         else
             spawnedCar = Instantiate(cars[0], transform.position, Quaternion.identity);
