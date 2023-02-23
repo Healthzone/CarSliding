@@ -1265,10 +1265,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8870708224518704759, guid: c0e372ac8ebdbb6478461e06f5bf10c7, type: 3}
-      propertyPath: m_FollowOffset.z
-      value: -2
-      objectReference: {fileID: 0}
     - target: {fileID: 8870708225405261474, guid: c0e372ac8ebdbb6478461e06f5bf10c7, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -1316,18 +1312,6 @@ PrefabInstance:
     - target: {fileID: 8870708225405261476, guid: c0e372ac8ebdbb6478461e06f5bf10c7, type: 3}
       propertyPath: m_Name
       value: Cinemachine 2d camera
-      objectReference: {fileID: 0}
-    - target: {fileID: 8870708225405261477, guid: c0e372ac8ebdbb6478461e06f5bf10c7, type: 3}
-      propertyPath: m_Follow
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8870708225405261477, guid: c0e372ac8ebdbb6478461e06f5bf10c7, type: 3}
-      propertyPath: m_Lens.FarClipPlane
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 8870708225405261477, guid: c0e372ac8ebdbb6478461e06f5bf10c7, type: 3}
-      propertyPath: m_Lens.OrthographicSize
-      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0e372ac8ebdbb6478461e06f5bf10c7, type: 3}

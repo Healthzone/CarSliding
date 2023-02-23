@@ -46,8 +46,14 @@ public class CarSelection : MonoBehaviour
             YandexGame.savesData.newCarsUnlocked[0] = true;
             moneyLabel.text = YandexGame.savesData.money.ToString();
             SelectCar(currentCar);
-        }
 
+            for (int i = 0; i < YandexGame.savesData.carsUnlocked.Length; i++)
+            {
+                YandexGame.savesData.newCarsUnlocked[i] = YandexGame.savesData.carsUnlocked[i];
+            }
+            YandexGame.savesData.levelCount = 25;
+            YandexGame.SaveProgress();
+        }
     }
 
     private void SelectCar(int index)

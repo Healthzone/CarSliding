@@ -46,6 +46,12 @@ public class UIManager : MonoBehaviour
         OnPlayerChangeVolume?.Invoke(0f);
     }
 
+    public void SetDesertLevel()
+    {
+        YandexGame.savesData.currentLevel = 21;
+        YandexGame.SaveProgress();
+    }
+
     public void StartGame()
     {
         if (YandexGame.SDKEnabled)

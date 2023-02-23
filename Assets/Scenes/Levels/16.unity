@@ -1409,10 +1409,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cinemachine 2d camera
       objectReference: {fileID: 0}
-    - target: {fileID: 8870708225405261477, guid: c0e372ac8ebdbb6478461e06f5bf10c7, type: 3}
-      propertyPath: m_Follow
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0e372ac8ebdbb6478461e06f5bf10c7, type: 3}
 --- !u!114 &1278363073 stripped

@@ -5046,7 +5046,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe3cc24b15d55a0468b8d26e9829e4f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _thrust: 390
+  _thrust: 405
   _break: 50
   _isMoving: 0
   _isStoping: 0
