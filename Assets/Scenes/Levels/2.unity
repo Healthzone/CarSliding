@@ -1032,10 +1032,34 @@ PrefabInstance:
       propertyPath: carSelector
       value: 
       objectReference: {fileID: 644748470}
+    - target: {fileID: 403901677, guid: ba9cd9c73f2948742a74a0d7b1a38255, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+    - target: {fileID: 403901677, guid: ba9cd9c73f2948742a74a0d7b1a38255, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+    - target: {fileID: 1975821399, guid: ba9cd9c73f2948742a74a0d7b1a38255, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+    - target: {fileID: 1975821399, guid: ba9cd9c73f2948742a74a0d7b1a38255, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
     - target: {fileID: 1975821401, guid: ba9cd9c73f2948742a74a0d7b1a38255, type: 3}
       propertyPath: carSelector
       value: 
       objectReference: {fileID: 644748470}
+    - target: {fileID: 3362159012455302641, guid: ba9cd9c73f2948742a74a0d7b1a38255, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+    - target: {fileID: 3362159012455302641, guid: ba9cd9c73f2948742a74a0d7b1a38255, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
     - target: {fileID: 3919224781154982154, guid: ba9cd9c73f2948742a74a0d7b1a38255, type: 3}
       propertyPath: m_Pivot.x
       value: 0
