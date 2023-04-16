@@ -17,8 +17,15 @@ public class NextLevel : MonoBehaviour
         LevelEnd.OnLevelEnd -= ProcessFinish;
     }
 
+    private IEnumerator ShowInterstitial()
+    {
+        yield return new WaitForSeconds(0.75f);
+        YandexGame.FullscreenShow();
+    }
+
     private void ProcessFinish()
     {
+        StartCoroutine(ShowInterstitial());
         ChangeLevel();
         YandexGame.savesData.money = moneyLabel.CoinCount;
         YandexGame.SaveProgress();
